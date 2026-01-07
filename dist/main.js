@@ -1,0 +1,1 @@
+(()=>{"use strict";const e=[{name:"мечник",health:10},{name:"маг",health:100},{name:"лучник",health:80}];var h;console.log(((h=e).sort((e,h)=>h.health-e.health),h)),console.log(function(e){switch(!0){case e.health>50:return"healthy";case e.health>15&&e.health<=50:return"wounded";case e.health<=15:return"critical"}}(e[1]))})();
