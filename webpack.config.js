@@ -26,11 +26,11 @@ export default {
                 test: /\.js$/,
                 exclude: /node_modules/,
                 use: 'babel-loader',
-               
+
             },
             {
                 test: /\.css$/i,
-                use: [MiniCssExtractPlugin.loader, 'css-loader'],
+                use: [ MiniCssExtractPlugin.loader, 'css-loader' ],
             },
             {
                 test: /\.(png|svg|jpg|jpeg|gif)$/i,
@@ -45,7 +45,7 @@ export default {
     optimization: {
         minimize: true,
         minimizer: [
-            `...`,
+            '...',
             new CssMinimizerPlugin(),
         ],
     },
